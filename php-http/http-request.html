@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP Request</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body{
+            margin-top: 10px;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>Register Student</h1>
+    <form action="register-student.php" method="POST" enctype="application/x-www-form-urlencoded">
+        <p class="form-group">
+            <label>Student ID :</label>
+            <input name="sid" class="form-control">
+        </p>
+        <p class="form-group">
+            <label>Student Name : </label>
+            <input name="sname" class="form-control">
+        </p>
+        <p class="form-group">
+            <label>Student Address : </label>
+            <textarea name="saddress" class="form-control"></textarea>
+        </p>
+        <p>
+            <button class="btn btn-primary" type="submit">Register</button>
+        </p>
+    </form>
+</body>
+</html>
